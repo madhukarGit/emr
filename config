@@ -1,0 +1,5 @@
+Host AI-Dev-Cluster
+  HostName ec2-3-236-50-63.compute-1.amazonaws.com
+  IdentityFile /Users/hmadhukar/analyticsupdated.pem
+  StrictHostKeyChecking no
+  User hadoop

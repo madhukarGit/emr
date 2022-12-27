@@ -15,6 +15,8 @@ def main():
     spark = get_spark_session(env, 'GitHub Activity - Reading Data')
     df = from_files(spark, src_dir, file_pattern, src_file_format)
     df_transformed=transform(df)
+    df_transformed=transform(df)
+    df_transformed.select('repo.*').show()
     to_files(df_transformed, tgt_dir, tgt_file_format)
 
 if __name__ == '__main__':
